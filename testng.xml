@@ -3,7 +3,7 @@
 <suite name="SeleniumPracticeSuite">
     <test thread-count="5" name="Test">
         <classes>
-          <class name="Basic_TestClass"></class>
+          <class name="LoginTest"></class>
 
         </classes>
     </test>

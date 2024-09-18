@@ -8,15 +8,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import utils.ReadConfigFile;
+
 import java.io.IOException;
 import java.net.URL;
-import java.util.Properties;
 
 public class DriverFactory {
     private DriverFactory() {
     }
-
-    public static Properties p;
     private static WebDriver driver;
 
     public static WebDriver get(String os, String br) throws IOException {

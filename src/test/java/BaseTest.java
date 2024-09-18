@@ -1,17 +1,20 @@
 import driver.Driver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
 import java.io.IOException;
 
 public class BaseTest {
 
-    @BeforeClass
+    @BeforeMethod
     public void setUpMethod() throws IOException {
      Driver.setup();
+     AuthLogin.authLogin();
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDownMethod(){
-        Driver.tearDown();
+     Driver.tearDown();
     }
+
 }

@@ -15,11 +15,10 @@ import static driver.DriverManager.*;
 
 public class Driver {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     public static void setup() throws IOException {
         if (Objects.isNull(getDriver())) {
-
             driver = DriverFactory.get(ReadConfigFile.getValue("os"), ReadConfigFile.getValue("browser"));
             setDriver(driver);
 
@@ -38,7 +37,7 @@ public class Driver {
         }
     }
 
-    public String captureScreen(String tname) throws IOException {
+    public String captureScreen(String tname) {
 
         String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 

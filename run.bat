@@ -1,2 +1,2 @@
-D:\New folder (2)\SeleniumPractice
+D:\New folder (2)\DapitRR
 mvn clean test
